@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trimble Cars Lease Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Welcome to Trimble Cars Lease Management</h1>
+
+<section id="car-section">
+    <h2>Manage Cars</h2>
+    <button onclick="fetchAllCars()">View All Cars</button>
+    <form id="register-car-form" onsubmit="registerCar(event)">
+        <h3>Register a New Car</h3>
+        <input type="text" id="carModel" placeholder="Car Model" required />
+        <button type="submit">Register Car</button>
+    </form>
+    <div id="car-list"></div>
+</section>
+
+<section id="customer-section">
+    <h2>Manage Customers</h2>
+    <button onclick="fetchAllCustomers()">View All Customers</button>
+    <form id="register-customer-form" onsubmit="registerCustomer(event)">
+        <h3>Register a New Customer</h3>
+        <input type="text" id="customerName" placeholder="Customer Name" required />
+        <input type="text" id="customerContact" placeholder="Customer Contact" required />
+        <button type="submit">Register Customer</button>
+    </form>
+    <div id="customer-list"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
